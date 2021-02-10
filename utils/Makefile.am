@@ -5,10 +5,10 @@ bin_PROGRAMS += nfs-cp
 endif
 
 AM_CPPFLAGS = \
-	-I$(abs_top_srcdir)/include \
-	-I$(abs_top_srcdir)/include/nfsc \
-	-I$(abs_top_srcdir)/mount \
-	-I$(abs_top_srcdir)/win32 \
+	-I$(top_srcdir)/include \
+	-I$(top_srcdir)/include/nfsc \
+	-I$(top_srcdir)/mount \
+	-I$(top_srcdir)/win32 \
 	"-D_U_=__attribute__((unused))"
 
 COMMON_LIBS = ../lib/libnfs.la $(LIBSOCKET)

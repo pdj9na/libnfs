@@ -90,10 +90,10 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include "libnfs-zdr.h"
+#include "nfsc/libnfs-zdr.h"
 #include "slist.h"
-#include "libnfs.h"
-#include "libnfs-raw.h"
+#include "nfsc/libnfs.h"
+#include "nfsc/libnfs-raw.h"
 #include "libnfs-raw-mount.h"
 #include "libnfs-private.h"
 

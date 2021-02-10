@@ -6,9 +6,9 @@ nfs4_GENERATED = $(nfs4_SOURCES_GENERATED) $(nfs4_HEADERS_GENERATED)
 
 CLEANFILES = $(nfs_GENERATED) nfs4-stamp
 
-libnfs4_la_CPPFLAGS = -I$(abs_top_srcdir)/include \
-		      -I$(abs_top_srcdir)/include/nfsc \
-		      -I$(abs_top_srcdir)/win32
+libnfs4_la_CPPFLAGS = -I$(top_srcdir)/include \
+		      -I$(top_srcdir)/include/nfsc \
+		      -I$(top_srcdir)/win32
 libnfs4_la_SOURCES = \
 	$(nfs4_SOURCES_GENERATED) \
 	nfs4.c libnfs-raw-nfs4.c libnfs-raw-nfs4.h

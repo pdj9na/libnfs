@@ -79,9 +79,9 @@
 #include <errno.h>
 #include <time.h>
 #include <sys/types.h>
-#include "libnfs-zdr.h"
-#include "libnfs.h"
-#include "libnfs-raw.h"
+#include "nfsc/libnfs-zdr.h"
+#include "nfsc/libnfs.h"
+#include "nfsc/libnfs-raw.h"
 #include "libnfs-private.h"
 #include "slist.h"
 

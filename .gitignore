@@ -1,4 +1,5 @@
 .*
+!.gitignore
 *.in
 *.la
 *.a
@@ -37,3 +38,12 @@ stamp-h1
 libnfs.pc
 !libnfs.pc.in
 build
+!/.vscode
+/.vscode/.changeTime_files
+/m4
+/utils
+!/utils/CMakeLists.txt
+!/utils/Makefile.am
+!/utils/*.c
+ar-lib
+config.h

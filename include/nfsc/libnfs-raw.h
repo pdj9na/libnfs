@@ -85,6 +85,7 @@ EXTERN int rpc_queue_length(struct rpc_context *rpc);
  */
 EXTERN void rpc_set_uid(struct rpc_context *rpc, int uid);
 EXTERN void rpc_set_gid(struct rpc_context *rpc, int gid);
+EXTERN void rpc_set_uid_gid(struct rpc_context *rpc, int uid, int gid);
 
 /*
  * Create a server context.

@@ -39,9 +39,10 @@
 #define IFNAMSIZ 16
 #endif
 
-#include "libnfs-zdr.h"
+#include "nfsc/libnfs-zdr.h"
 #include "../nfs/libnfs-raw-nfs.h"
 #include "../nfs4/libnfs-raw-nfs4.h"
+#include "nfsc/libnfs_pub.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -276,6 +277,7 @@ struct nfs_fh {
 };
 
 struct nfs_context {
+       struct nfs_context_pub pub;
        struct rpc_context *rpc;
        char *server;
        char *export;

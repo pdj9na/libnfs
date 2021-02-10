@@ -49,9 +49,9 @@
 #include <assert.h>
 #include <time.h>
 #include "slist.h"
-#include "libnfs-zdr.h"
-#include "libnfs.h"
-#include "libnfs-raw.h"
+#include "nfsc/libnfs-zdr.h"
+#include "nfsc/libnfs.h"
+#include "nfsc/libnfs-raw.h"
 #include "libnfs-private.h"
 
 uint64_t rpc_current_time(void)
@@ -223,7 +223,7 @@ void rpc_set_auth(struct rpc_context *rpc, struct AUTH *auth)
 	rpc->auth = auth;
 }
 
-static void rpc_set_uid_gid(struct rpc_context *rpc, int uid, int gid) {
+void rpc_set_uid_gid(struct rpc_context *rpc, int uid, int gid) {
 	if (uid != rpc->uid || gid != rpc->gid) {
 		struct AUTH *auth = libnfs_authunix_create("libnfs", uid, gid, 0, NULL);
 		if (auth != NULL) {

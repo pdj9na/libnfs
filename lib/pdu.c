@@ -49,9 +49,9 @@
 #include <assert.h>
 #include <errno.h>
 #include "slist.h"
-#include "libnfs-zdr.h"
-#include "libnfs.h"
-#include "libnfs-raw.h"
+#include "nfsc/libnfs-zdr.h"
+#include "nfsc/libnfs.h"
+#include "nfsc/libnfs-raw.h"
 #include "libnfs-private.h"
 
 void rpc_reset_queue(struct rpc_queue *q)

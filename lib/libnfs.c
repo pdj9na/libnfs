@@ -80,8 +80,8 @@
 #include <string.h>
 #include <time.h>
 #include "slist.h"
-#include "libnfs.h"
-#include "libnfs-raw.h"
+#include "nfsc/libnfs.h"
+#include "nfsc/libnfs-raw.h"
 #include "libnfs-raw-mount.h"
 #include "libnfs-raw-portmap.h"
 #include "libnfs-private.h"
@@ -1802,6 +1802,11 @@ nfs_set_uid(struct nfs_context *nfs, int uid) {
 void
 nfs_set_gid(struct nfs_context *nfs, int gid) {
 	rpc_set_gid(nfs->rpc, gid);
+}
+
+void
+nfs_set_uid_gid(struct nfs_context *nfs, int uid, int gid) {
+	rpc_set_uid_gid(nfs->rpc, uid, gid);
 }
 
 void

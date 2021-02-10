@@ -49,9 +49,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include "libnfs-zdr.h"
-#include "libnfs.h"
-#include "libnfs-raw.h"
+#include "nfsc/libnfs-zdr.h"
+#include "nfsc/libnfs.h"
+#include "nfsc/libnfs-raw.h"
 #include "libnfs-private.h"
 
 struct zdr_mem {
